@@ -1,0 +1,178 @@
+/* Hero Section */
+.hero-section {
+  background-color: #f4e2e2;
+  padding: 60px 0;
+}
+
+.hero-section .main {
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-section .text-container {
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero-section .text-container .main-text-a {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--foreground);
+}
+
+.hero-section .text-container .main-para {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--foreground);
+}
+
+/* Certification, Education, and Skills Section */
+.info-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.info-section b {
+  font-weight: 600;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skills ul li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#skills ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  color: #f98585;
+  top: 0;
+  margin-top: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .hero-section .main {
+    gap: 40px;
+  }
+
+  .hero-section .text-container .main-text-a {
+    font-size: 40px;
+  }
+
+  .hero-section .text-container .main-para {
+    font-size: 15px;
+  }
+
+  .info-section {
+    padding: 30px 20px;
+  }
+
+  .info-section h3 {
+    font-size: 26px;
+  }
+
+  .info-section p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section .main {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-section .text-container .main-text-a {
+    font-size: 36px;
+  }
+
+  .hero-section .text-container .main-para {
+    font-size: 14px;
+  }
+
+  .info-section {
+    padding: 20px 15px;
+  }
+
+  .info-section h3 {
+    font-size: 24px;
+  }
+
+  .info-section p {
+    font-size: 13px;
+  }
+
+  #skills ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section .main {
+    gap: 20px;
+  }
+
+  .hero-section .text-container .main-text-a {
+    font-size: 30px;
+  }
+
+  .hero-section .text-container .main-para {
+    font-size: 13px;
+  }
+
+  .info-section {
+    padding: 15px 10px;
+  }
+
+  .info-section h3 {
+    font-size: 22px;
+  }
+
+  .info-section p {
+    font-size: 12px;
+  }
+
+  #skills ul li {
+    font-size: 12px;
+  }
+
+  .info-section ul li::before {
+    font-size: 16px; 
+  }
+}
+
+.hero-section .main div img {
+  width: 90%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
